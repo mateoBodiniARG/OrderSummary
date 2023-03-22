@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+:root{
+    /* Primary colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-alternative: hsl(245, 82%, 62%);
+    --bright-blue-alternativeV2: hsl(245, 48%, 59%);
+
+    /* Neutral colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+    /* Font */
+    --Red-Hat-Display: 'Red Hat Display', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--Red-Hat-Display);
+}
+
+
+.main-container{
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/Public/images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-card{
+    border-radius: 20px;
+    width: 370px;
+    background-color: var(--white);
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+
+.order-card__img{
+    background-position: center;
+    background-size: cover;
+    background-image: url(/Public/images/illustration-hero.svg);
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.order-card__info{
+    padding: 15px 40px;
+}
+
+.info__title{
+    font-weight: 800;
+    font-size: 23px;
+    text-align: center;
+    margin: 23px 0px 23px 0px;
+    color: var(--dark-blue);
+}
+.info__parrafo{
+    text-align: center;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    margin-bottom: 25px;
+}
+
+
+.info__summary{
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    margin: 20px 0px;
+}
+
+.summary__change{
+    font-weight: 700;
+    color: var(--bright-blue)
+}
+
+.summary__change:hover{
+    color: var(--bright-blue-alternative);
+    text-decoration: none;
+}
+
+.info__detail h3{
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
+
+.info__detail span{
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+}
+
+
+
+button{
+    border: none;
+    background: none;
+    width: 100%;
+    font-family: var(--Red-Hat-Display);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 17px 24px;
+    margin: 5px 0px;
+}
+
+.purchase-button{
+    font-weight: 900;
+    font-size: 14px;
+    background-color: var(--bright-blue);
+    border-radius: 12px;
+    color: var(--white);
+    box-shadow: 2.9px 5.8px 5.8px hsl(0deg 0% 0% / 0.2);
+    transition: background-color .4s ease;
+}
+
+.purchase-button:hover{
+    background-color: var(--bright-blue-alternativeV2);
+}
+
+.cancel-button{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color:var(--desaturated-blue)
+}
+
+.cancel-button:hover{
+    color: var(--black);
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .main-container{
+        background-image: url(/Public/images/pattern-background-mobile.svg);
+       }
+
+       .order-card{ 
+        width: 320px;
+    }
+
+    .order-card__info{
+        padding: 15px 20px;
+    }
+
+    .info__detail h3{
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: var(--dark-blue);
+    }
+    
+    .info__detail span{
+        color: var(--desaturated-blue);
+        font-size: 0.8rem;
+    }
+    }
