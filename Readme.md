@@ -10,7 +10,7 @@
 Continuing with Frontend Mentor, I have made another of the projects that are there. 😄
 
 ### Link (RESULTS FINAL)
-***Difficulty: "NEWBIE"*** - [Final Site](https://summary-component-bodini.netlify.app/)
+***Difficulty: "NEWBIE"*** - [Final Site](https://lustrous-croquembouche-c29322.netlify.app/)
 
 ### Built with
 
